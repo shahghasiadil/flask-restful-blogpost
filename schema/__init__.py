@@ -1,0 +1,1 @@
+from .blogpost_schema import BlogPostSchema
