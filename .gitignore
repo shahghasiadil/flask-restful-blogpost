@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+
+# Log files
+*.log
+
+# Flask instance-specific files (e.g., if using Flask's app factory pattern)
+instance/
+
+# SQLite database files (if used)
+*.sqlite
+
+# Environment variables, secret keys, etc.
+.env
+
+# Virtual Environment (common naming conventions)
+venv/
+env/
+ENV/
+*.venv/
+
+# IDEs and text editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.pyre/
+*.ropeproject
+
+# OS-specific
+.DS_Store
+Thumbs.db
