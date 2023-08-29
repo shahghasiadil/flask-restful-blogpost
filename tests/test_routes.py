@@ -1,5 +1,5 @@
 import pytest
-from main import app
+from app import app
 import json
 from entities import BlogPost
 @pytest.fixture
