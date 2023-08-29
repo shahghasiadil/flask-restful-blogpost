@@ -8,7 +8,6 @@ from config.setting import Config
 
 class BlogPostRepository:
     def __init__(self):
-        # Correct way to check if Firebase has been initialized
         if not firebase_admin._DEFAULT_APP_NAME in firebase_admin._apps:
             cred = credentials.Certificate(Config.FIREBASE_KEY_PATH)
             initialize_app(cred)
