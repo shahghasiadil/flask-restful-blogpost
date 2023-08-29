@@ -1,6 +1,15 @@
-FROM python:3.10
-ENV PYTHONUNBUFFERED 1
+FROM python:3-alpine
+
+# Create app directory
 WORKDIR /app
-COPY requirements.txt /app/requirements.txt
+
+# Install app dependencies
+COPY requirements.txt ./
+
 RUN pip install -r requirements.txt
-COPY . /app
+
+# Bundle app source
+COPY . .
+
+EXPOSE 5000
+CMD [ "flask", "run","--host","0.0.0.0","--port","5000"]
